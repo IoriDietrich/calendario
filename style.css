@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    max-width: 600px;
+    padding: 1.5rem;
+}
+
+.content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title {
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.description {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+#date-input {
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.2rem;
+}
