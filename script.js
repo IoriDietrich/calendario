@@ -77,7 +77,7 @@ function textBuilder(remainingTime) {
         }
 
         else {
-            result.push(`${monthsLeft} monyh`)
+            result.push(`${monthsLeft} month`)
         }
     }
 
@@ -88,6 +88,36 @@ function textBuilder(remainingTime) {
 
         else {
             result.push(`${daysLeft} day`)
+        }
+    }
+
+    if (remainingTime.hoursLeft >0) {
+        if (remainingTime.hoursLeft > 1) {
+            result.push(`${hoursLeft} hours`)
+        }
+
+        else {
+            result.push(`${hoursLeft} hour`)
+        }
+    }
+
+    if (remainingTime.minutesLeft >0) {
+        if (remainingTime.minutesLeft > 1) {
+            result.push(`${minutesLeft} minutes`)
+        }
+
+        else {
+            result.push(`${minutesLeft} minute`)
+        }
+    }
+
+    if (remainingTime.secondsLeft >0) {
+        if (remainingTime.secondsLeft > 1) {
+            result.push(`${secondsLeft} seconds`)
+        }
+
+        else {
+            result.push(`${secondsLeft} second`)
         }
     }
 }
